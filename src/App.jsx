@@ -1,10 +1,9 @@
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import { ThemeProvider } from './context/ThemeContext';
 import Navbar from './components/Navbar/Navbar';
-import Home from './pages/Home/Home';
-import About from './pages/About/About';
+import Projects from './pages/Projects/Projects';
+import About from './pages/Home/Home';
 import Footer from './components/Footer/Footer';
-import BackToTopBtn from "./components/BackToTopBtn/BackToTopBtn";
 import ProjectDetails from "./pages/ProjectDetails/ProjectDetails";
 
 const App = () => {
@@ -14,8 +13,8 @@ const App = () => {
                 <Navbar />
 
                 <Routes>
-                    <Route path='/' element={<Home />} />
-                    <Route path='/about' element={<About />} />
+                    <Route path='/' element={<About />} />
+                    <Route path='/projects' element={<Projects />} />
                     <Route path='/project/:id' element={<ProjectDetails />} />
                 </Routes>
 

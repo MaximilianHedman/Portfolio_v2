@@ -49,12 +49,12 @@ const Navbar = () => {
                     <ul>
                         <li>
                             <NavLink to='/' className="navbar-link" onClick={closeMenu}>
-                                Portfolio
+                                Home
                             </NavLink>
                         </li>
                         <li>
-                            <NavLink to='/about' className="navbar-link" onClick={closeMenu}>
-                                About
+                            <NavLink to='/projects' className="navbar-link" onClick={closeMenu}>
+                                Projects
                             </NavLink>
                         </li>
                     </ul>
@@ -68,15 +68,15 @@ const Navbar = () => {
                             to='/'
                             className={({ isActive }) => isActive ? 'navbar-link active' : 'navbar-link'}
                         >
-                            Portfolio
+                            Home
                         </NavLink>
                     </li>
                     <li>
                         <NavLink
-                            to='/about'
+                            to='/projects'
                             className={({ isActive }) => isActive ? 'navbar-link active' : 'navbar-link'}
                         >
-                            About
+                            Projects
                         </NavLink>
                     </li>
                 </ul>
