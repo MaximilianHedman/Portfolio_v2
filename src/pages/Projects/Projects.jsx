@@ -6,7 +6,7 @@ import BackToTopBtn from '../../components/BackToTopBtn/BackToTopBtn';
 
 const Projects = () => {
     return (
-        <main className='home-container'>
+        <main className='projects-container'>
             <section className='card-container' aria-label="Projects Portfolio">
                 {projectData.map((project) => (
                     <ProjectCard key={project.id} project={project} />
